@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductDetail">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dip" >
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="300dp"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/product_example"
+                android:layout_weight="1" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_marginTop="70dp"
+                android:paddingLeft="5dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+                <TextView
+                    android:id="@+id/text_mark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:text="ACER"/>
+                <TextView
+                    android:id="@+id/text_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_mark"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp"
+                    android:text="ACER NITRO 5 AN515-42-R4KY / AMD RYZEN 5 / 16GB / 2TB + 128 SSD / AMD RADEON RX 560X / 15.6"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_name"
+                    android:textColor="#CCCCCC"
+                    android:textSize="9sp"
+                    android:text="SKU: 2000372107077P"/>
+
+                <TextView
+                    android:id="@+id/txt_normal_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Normal"
+                    android:layout_above="@+id/txt_internet_price"
+                    />
+
+                <TextView
+                    android:id="@+id/value_normal_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$789.990"
+                    android:layout_alignParentRight="true"
+                    android:layout_above="@+id/txt_internet_price"
+                    />
+
+                <TextView
+                    android:id="@+id/txt_internet_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Internet"
+                    android:layout_above="@+id/txt_ripley_cart"
+                    />
+
+                <TextView
+                    android:id="@+id/value_internet__price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$599.990"
+                    android:layout_alignParentRight="true"
+                    android:layout_above="@+id/txt_ripley_cart"
+                    />
+
+                <TextView
+                    android:id="@+id/txt_ripley_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tarjeta Ripley"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:layout_above="@+id/discount_id"
+                    />
+
+                <TextView
+                    android:id="@+id/value_ripley_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:text="$599.990"
+                    android:layout_alignParentRight="true"
+                    android:layout_above="@+id/discount_id"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="8dp"
+
+                    android:layout_marginEnd="61dp"
+                    android:layout_marginRight="61dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_toStartOf="@+id/discount_id"
+                    android:layout_toLeftOf="@+id/discount_id"
+                    android:text="Descuento"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+                <RelativeLayout
+                    android:id="@+id/discount_id"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentRight="true"
+                    android:elevation="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/corner_radius"
+                    >
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="-24%"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
